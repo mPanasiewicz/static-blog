@@ -7,5 +7,20 @@ layout: default
   <div class="blog-post spacing">
     <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
     {{ content }}
+    <h3>Leave a comment</h3>
+    <form id="comment">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+
+      <label for="name">Name</label>
+      <input type="text" id="name">
+
+      <label for="email">Email</label>
+      <input type="text" id="email">
+
+      <input type="submit" value="Post Comment">
+    </form>
+    <hr>
+    <div class="comments"></div>
   </div>
 </div>
